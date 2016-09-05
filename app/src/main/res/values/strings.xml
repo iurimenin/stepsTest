@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StepTest</string>
+    <string name="title_activity_text_step">TextStep</string>
+    <string name="title_activity_progress">Progress</string>
+</resources>
