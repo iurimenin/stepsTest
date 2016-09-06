@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonTextStep;
     private Button buttonProgressStep;
+    private Button buttonDotsStep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonTextStep = (Button) findViewById(R.id. buttonTextStep);
         buttonProgressStep = (Button) findViewById(R.id.buttonProgressStep);
+        buttonDotsStep = (Button) findViewById(R.id.buttonDotsStep);
 
         buttonTextStep.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, ProgressStep.class);
+                startActivity(i);
+            }
+        });
+
+        buttonDotsStep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, DotsSample.class);
                 startActivity(i);
             }
         });
